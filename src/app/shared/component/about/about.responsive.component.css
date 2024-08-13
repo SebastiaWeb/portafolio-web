@@ -1,0 +1,46 @@
+@media screen and (max-width: 1100px) {
+    .about-descripcion {
+        font-size: 15px;
+    }
+    .about-descripcion>span {
+        font-size: 20px;
+    }
+    .about-descripcion>h5 {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .about-descripcion {
+        width: 100%;
+        font-size: 15px;
+        text-align: justify;
+    }
+    .about-descripcion>span {
+        font-size: 18px;
+    }
+    .about-descripcion>h5 {
+        display: none;
+        font-size: 35px;
+    }
+    .container>img {
+        width: 40%;
+        align-self: center;
+        margin-bottom: 2%;
+    }
+    .container {
+        flex-direction: column;
+    }
+    .container>h5 {
+        display: block;
+        color: gray;
+        margin-bottom: 5%;
+        font-size: 40px;
+    }
+    .download-cv {
+        margin-top: 4%;
+    }
+    .download-cv>button {
+        width: 90%;
+    }
+}

@@ -1,0 +1,69 @@
+.menu {
+    /* background-color: rgba(0, 0, 0, 0.192); */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    z-index: 200;
+    /*  */
+    background: rgb(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    box-shadow: 0px 25px 45px rgb(0, 0, 0, 0.1);
+}
+
+.menu-responsive {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+}
+
+.menu>ul {
+    padding: 1%;
+    width: 47%;
+    display: flex;
+    justify-content: left;
+}
+
+.menu>ul>li {
+    cursor: pointer;
+    padding: 3%;
+    list-style: none;
+    transition: ease-in 300ms;
+}
+
+.menu>ul>li>a {
+    color: white;
+    font-size: 20px;
+    font-weight: normal;
+    text-decoration: none;
+    transition: 300ms;
+    transform-origin: left;
+    transform: scaleX(0);
+}
+
+.menu>ul>li>a:hover {
+    /* font-weight: bold; */
+    border-bottom: 5px solid yellow;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    text-shadow: 0px 25px 45px rgb(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+}
+
+.contact-linkedin {
+    display: flex;
+    width: 20%;
+    cursor: pointer;
+    justify-content: right;
+}
+
+.contact-linkedin>i {
+    color: white;
+    font-size: 50px;
+}
+
+
+/* RESPONSIVE - MENU */

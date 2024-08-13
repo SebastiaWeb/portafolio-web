@@ -1,0 +1,22 @@
+<div *ngIf="proyectoContenido == true" id="proyect">
+    <article *ngFor="let proyecto of proyectosData">
+        <section class="proyectos" id="proyect {{proyecto.id}}">
+
+            <div class="proyecto">
+                <!--  -->
+                <div class="proyecto-img" #proyectoImg>
+                    <img loading="lazy" src="{{ rutaProyectoImg+proyecto.id+imgExtension }}" (click)="goProyecto(proyecto.link)" class="img-general" #imgProyect>
+                </div>
+                <div class="proyecto-contenido">
+                    <h2 class="proyecto-titulo" #revealTitulo>{{proyecto.titulo}}</h2>
+                    <p class="proyecto-descripcion" #revealDescripcion>{{proyecto.descripcion}}</p>
+                </div>
+            </div>
+
+
+        </section>
+    </article>
+</div>
+<section class="espacio">
+
+</section>

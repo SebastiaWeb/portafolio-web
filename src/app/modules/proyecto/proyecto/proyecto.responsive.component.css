@@ -1,0 +1,32 @@
+@media screen and (max-width: 900px) {
+    .proyecto-contenido>.proyecto-titulo {
+        font-size: 30px;
+    }
+    .proyecto-contenido>.proyecto-descripcion {
+        font-size: 15px;
+    }
+    .proyecto-img {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .proyecto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .proyecto-img {
+        width: 70%;
+    }
+    .proyecto-contenido {
+        position: relative;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .proyecto-contenido>.proyecto-titulo {
+        font-size: 25px;
+    }
+}

@@ -1,0 +1,25 @@
+<!-- <home (menuHeight)="obtenerHeight($event)"></home> -->
+<div class="home" id="home">
+
+    <navbar #navbarx (menuHeight)="obtenerHeight($event)" (targetsHTML)="getTargetsHTML($event)"></navbar>
+
+
+    <!-- Inicio maquina de escribir -->
+    <div class="main-letra" id="main-letra" #mainletra>
+        <div class="main-letra-rol" #mainletrarol>
+            <span class="main-letra__static">Desarrollador </span>
+            <span class="main-letra__rol tema-html" #mainletrarolx #temahtml></span><span class="main-letra__signoRol" #mainLetraSignoRol>|</span>
+        </div>
+    </div>
+    <!-- Fin maquina de escribir -->
+    <div class="container-esferas">
+        <img src="../../../../assets/icon-esfera/html.png" class="esfera html" id="esferaHtml" loading="lazy">
+        <img src="../../../../assets/icon-esfera/css.png" class="esfera css" id="esferaCSS" loading="lazy">
+        <img src="../../../../assets/icon-esfera/js.png" class="esfera js" id="esferaJS" loading="lazy">
+        <img src="../../../../assets/icon-esfera/angular.png" class="esfera angular" id="esferaAngular" loading="lazy">
+        <img src="../../../../assets/icon-esfera/node.png" class="esfera node" id="esferaNode" loading="lazy">
+        <img src="../../../../assets/icon-esfera/git.png" class="esfera git" id="esferaGit" loading="lazy">
+        <img src="../../../../assets/icon-esfera/php.png" class="esfera php" id="esferaPHP" loading="lazy">
+    </div>
+
+</div>

@@ -1,0 +1,37 @@
+<nav class="menu" #menu>
+
+    <ul>
+        <li><a href="#home" (click)="scrollSuave($event)">Inicio</a></li>
+        <li><a href="#proyect" (click)="scrollSuave($event)">Proyectos</a></li>
+        <li><a href="#about" (click)="scrollSuave($event)">Acerca De</a></li>
+        <li><a href="#contact" (click)="scrollSuave($event)">Contacto</a></li>
+    </ul>
+
+    <div class="contact-linkedin">
+        <i class="fab fa-linkedin" (click)="goLinkedin()"></i>
+    </div>
+
+</nav>
+
+<div class="menu-icon" #btnMenuIcon>
+    <i class="fas fa-bars" (click)="showMenuSlide()" id="barsMenu"></i>
+</div>
+
+<nav class="menu-responsive" #menuResponsive>
+
+
+
+    <ul>
+        <li><a href="#home" (click)="scrollSuave($event)">Inicio</a></li>
+        <li><a href="#proyect" (click)="scrollSuave($event)">Proyectos</a></li>
+        <li><a href="#about" (click)="scrollSuave($event)">Acerca De</a></li>
+        <li><a href="#contact" (click)="scrollSuave($event)">Contacto</a></li>
+    </ul>
+
+
+
+    <!-- <div class="contact-linkedin">
+        <i class="fab fa-linkedin"></i>
+    </div> -->
+
+</nav>

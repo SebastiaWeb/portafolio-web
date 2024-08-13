@@ -1,0 +1,44 @@
+@media screen and (max-width: 900px) {
+    .main-letra__rol {
+        font-size: 300%;
+    }
+    .main-letra__signoRol {
+        font-size: 300%;
+    }
+    .main-letra__static {
+        font-size: 300%;
+    }
+    .esfera {
+        width: 10%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .main-letra__rol {
+        font-size: 200%;
+    }
+    .main-letra__signoRol {
+        font-size: 200%;
+    }
+    .main-letra__static {
+        font-size: 200%;
+    }
+    .esfera {
+        width: 12%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .main-letra__rol {
+        font-size: 150%;
+    }
+    .main-letra__signoRol {
+        font-size: 150%;
+    }
+    .main-letra__static {
+        font-size: 150%;
+    }
+    .esfera {
+        width: 16%;
+    }
+}

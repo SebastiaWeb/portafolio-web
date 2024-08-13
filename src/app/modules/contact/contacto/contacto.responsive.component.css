@@ -1,0 +1,48 @@
+@media screen and (max-width: 900px) {
+    .contacto-descripcion>h3 {
+        font-size: 40px;
+    }
+    .contacto-descripcion>p {
+        font-size: 15px;
+    }
+    .contacto__redes-autor {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .contacto-descripcion>p {
+        font-size: 13px;
+    }
+    .contacto__redes-autor {
+        font-size: 11px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .contacto__redes-autor {
+        flex-direction: column;
+    }
+    .contacto__redes-autor>.contacto-autor {
+        margin-bottom: 5%;
+        width: 100%;
+        text-align: center;
+    }
+    .contacto__redes-autor>.contacto-redes {
+        width: 40%;
+        margin: 0 auto;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .contacto__redes-autor>.contacto-redes {
+        width: 60%;
+    }
+    .contacto-descripcion>p {
+        font-size: 13px;
+        text-align: justify;
+        display: block;
+        margin-bottom: 2%;
+    }
+}

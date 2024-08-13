@@ -1,0 +1,127 @@
+.proyectos {
+    position: relative;
+    width: 100%;
+    padding: 10%;
+    background-color: #061c2d;
+    color: white;
+}
+
+.espacio {
+    width: 100%;
+    background-color: #061c2d;
+    height: 100px;
+}
+
+.proyecto {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.proyecto-contenido {
+    position: relative;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 8%;
+    /* justify-content: space-evenly; */
+    z-index: 40;
+}
+
+.proyecto-contenido>.proyecto-titulo {
+    position: relative;
+    display: block;
+    margin-bottom: 10%;
+    font-size: 45px;
+    font-family: Arial, Helvetica, sans-serif;
+    transform-origin: left;
+    transform: scaleX(0);
+    transition: 0.5s;
+    transition-delay: 0.5s;
+}
+
+section .proyecto-titulo:before {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    content: '';
+    background: #020a4d;
+    transform-origin: right;
+    transition: 0.5s;
+    transition-delay: 0s;
+}
+
+.proyecto-contenido>.proyecto-descripcion {
+    display: block;
+    font-size: 19px;
+    text-align: justify;
+    transform-origin: left;
+    transform: scaleX(0);
+    transition: 0.5s;
+    transition-delay: 0.5s;
+}
+
+section .proyecto-descripcion:before {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    content: '';
+    background: #e899d8;
+    transform-origin: right;
+    transition: 0.5s;
+    transition-delay: 0s;
+}
+
+section .proyecto-titulo.active,
+section .proyecto-descripcion.active {
+    transform: scaleX(1);
+    transition: 0s;
+}
+
+section .proyecto-titulo.active:before,
+section .proyecto-descripcion.active:before {
+    transform: scaleX(0);
+    transition-delay: 0.5s;
+}
+
+.proyecto-img {
+    cursor: pointer;
+    position: relative;
+    width: 28%;
+    background: linear-gradient(rgba(218, 121, 10, 0.205), rgba(16, 20, 58, 0.151));
+    border-radius: 10px;
+    /* box-shadow: 0px 0px 1px white, 0px 2px 2px white, 2px 0px 2px white; */
+}
+
+.proyecto-img>div {
+    display: flex;
+    justify-content: center;
+}
+
+.proyecto-img>div>.img-proyecto {
+    position: relative;
+    width: 80%;
+    z-index: 30;
+}
+
+.proyecto-img>.img-general {
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 10;
+}
+
+.proyecto-img {
+    opacity: 0;
+    left: -100px;
+    transition: 0.5s;
+}
+
+.proyecto-img.active {
+    left: 0;
+    opacity: 1;
+}

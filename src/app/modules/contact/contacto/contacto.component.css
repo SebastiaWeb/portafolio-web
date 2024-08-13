@@ -1,0 +1,106 @@
+.contacto {
+    position: relative;
+    width: 100%;
+    /* height: 100vh; */
+    padding: 10%;
+    background: #061c2d;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.little-goku_gif {
+    position: absolute;
+    width: 20%;
+    top: 0;
+    left: 20%;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    z-index: 20;
+}
+
+.fondo-contacto {
+    position: relative;
+    padding: 2%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgba(64, 107, 107, 0.1), 5px 0px 1px rgba(64, 107, 107, 0.5), 0px 5px 1px rgba(64, 107, 107, 0.5), 0px 0px 5px rgba(64, 107, 107, 0.5);
+    transform-origin: top;
+    opacity: 1;
+    transform: scaleY(1);
+    transition: 0.3s;
+    transition-delay: 0.3s;
+    margin-top: 8%;
+    z-index: 50;
+}
+
+.fondo-contacto.active {
+    opacity: 1;
+    top: 0;
+    transform: scaleY(1);
+    transition: 0.3;
+    transition-delay: 0.3s;
+}
+
+.contacto-descripcion {
+    height: 40%;
+    margin-bottom: 2%;
+    z-index: 50;
+}
+
+.contacto-descripcion>h3 {
+    display: block;
+    margin-bottom: 2%;
+    font-size: 45px;
+    color: rgb(207, 207, 207);
+}
+
+.contacto-descripcion>p {
+    display: block;
+    margin-top: 2%;
+    padding: 2%;
+    color: rgb(182, 182, 182);
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.contacto-descripcion>p>span {
+    display: block;
+    margin-bottom: 1%;
+    font-weight: bold;
+}
+
+.contacto__redes-autor {
+    margin: 0 auto;
+    width: 80%;
+    height: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: rgb(207, 207, 207);
+    font-size: 18px;
+    z-index: 50;
+}
+
+.contacto__redes-autor>.contacto-redes {
+    width: 30%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contacto__redes-autor>.contacto-autor>span {
+    display: block;
+    margin-top: 1%;
+    font-weight: bold;
+}
+
+.contacto__redes-autor>.contacto-redes>img {
+    cursor: pointer;
+    width: 35%;
+}
+
+.contacto__redes-autor>.contacto-redes>i {
+    cursor: pointer;
+    display: block;
+    font-size: 300%;
+}
